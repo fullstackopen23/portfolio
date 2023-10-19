@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bobbs Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,14 +175,18 @@
         <section data-section="contact" class="contact-section" id="contact-section-id">
             <div class="contact-wrapper">
                 <h2>Contact</h2>
-                <p>Leave me an e-mail (<b>bobb@gmail.com</b>) or use the contact form </p>
-                <form action="#">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+                <p>Leave me an e-mail (<b>bobb@gmail.com</b>) or use the contact form below.</p>
+                <form method="POST" id="form">
+                    <input id="nameInput" type="text" name="name" placeholder="Name" />
+                    <input id="emailInput" required type="email" name="email" placeholder="Email" />
+                    <textarea id="messageInput" required name="message" id="message" placeholder="Message" cols="30"
+                        rows="5"></textarea>
                     <button>Submit</button>
+                    <p id="success" class="hide">Message sent successfully</p>
                 </form>
             </div>
+
+
         </section>
 
     </main>
