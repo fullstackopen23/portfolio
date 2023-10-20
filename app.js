@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
       current = section.dataset.section
     }
   })
-  console.log(current)
   const linkElements = document.querySelectorAll('li')
   linkElements.forEach((item) => {
     item.classList.remove('active')
@@ -41,16 +40,13 @@ form.addEventListener('submit', (e) => {
     email: email.value,
     message: message.value,
   })
-  console.log(formData)
   fetch('https://formspree.io/f/xleyaqor', {
     method: 'POST',
     body: formData,
     headers: {
       Accept: 'application/json',
     },
-  }).then((res) => {
-    console.log(res)
-  })
+  }).then((res) => {})
 
   name.value = ''
   email.value = ''
