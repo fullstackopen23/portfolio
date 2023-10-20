@@ -42,7 +42,7 @@ form.addEventListener('submit', (e) => {
     message: message.value,
   })
   console.log(formData)
-  fetch(process.env.FORMSPREE, {
+  fetch('https://formspree.io/f/xleyaqor', {
     method: 'POST',
     body: formData,
     headers: {
