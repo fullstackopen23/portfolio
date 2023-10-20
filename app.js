@@ -1,5 +1,4 @@
 AOS.init()
-
 /* Adds the class active to elements by scrolling in section */
 window.addEventListener('scroll', () => {
   let current = ''
@@ -30,11 +29,6 @@ projects.forEach((project) => {
   })
 })
 
-function handleSubmit(e) {
-  e.preventDefault()
-  return false
-}
-
 const form = document.getElementById('form')
 form.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -48,7 +42,7 @@ form.addEventListener('submit', (e) => {
     message: message.value,
   })
   console.log(formData)
-  fetch('https://formspree.io/f/xleyaqor', {
+  fetch(process.env.FORMSPREE, {
     method: 'POST',
     body: formData,
     headers: {
