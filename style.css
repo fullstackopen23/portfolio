@@ -176,11 +176,14 @@ nav .active {
   align-items: center;
   gap: 30px;
   width: 80%;
+  text-align: center;
 }
 
-section.about-section svg {
-  width: 60%;
+section.about-section img {
+  width: 50%;
   max-width: 300px;
+  border-radius: 50%;
+  margin: 20px 0px;
 }
 
 /* PROJECTS SECTION */
@@ -200,8 +203,8 @@ section.about-section svg {
 }
 
 .project {
-  width: 100%;
-  max-width: 500px;
+  width: 70%;
+  max-width: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -240,11 +243,11 @@ section.about-section svg {
     font-size: 6rem;
   }
   .about-wrapper {
-    width: 30%;
+    width: 40%;
   }
-
   .projects {
     flex-direction: row;
+    width: 80%;
   }
   .project {
     padding: 20px;
