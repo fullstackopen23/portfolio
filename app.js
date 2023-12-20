@@ -1,23 +1,26 @@
 AOS.init()
 /* Adds the class active to elements by scrolling in section */
-window.addEventListener('scroll', () => {
-  let current = ''
-  const sections = document.querySelectorAll('section')
-  sections.forEach((section) => {
-    let sectionTop = section.offsetTop
-    if (scrollY >= sectionTop - 300) {
-      current = section.dataset.section
+
+const sections = document.querySelectorAll('section')
+const linkElements = document.querySelectorAll('li')
+
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY
+    let offset = sec.offsetTop - 550
+    let height = sec.offsetHeight
+    let id = sec.dataset.section
+
+    if (top >= offset && top < offset + height) {
+      linkElements.forEach((links) => {
+        links.classList.remove('active')
+        if (links.dataset.section === id) {
+          links.classList.add('active')
+        }
+      })
     }
   })
-  const linkElements = document.querySelectorAll('li')
-  linkElements.forEach((item) => {
-    item.classList.remove('active')
-  })
-  const activatedLink = document.querySelector(
-    `li[data-section="${current}"]`
-  )
-  activatedLink.classList.add('active')
-})
+}
 
 const projects = document.querySelectorAll('.project')
 projects.forEach((project) => {

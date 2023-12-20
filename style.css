@@ -199,6 +199,8 @@ section.about-section img {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  padding-bottom: 30px;
+
   width: 100%;
 }
 .projects {
@@ -256,6 +258,9 @@ section.about-section img {
   nav ul li {
     font-size: 1.2rem;
   }
+  .hero_text_container h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1499px) {
@@ -277,6 +282,7 @@ section.about-section img {
 
 .contact-section {
   padding: 10px;
+  padding-top: 80px;
 }
 
 .contact-wrapper {
