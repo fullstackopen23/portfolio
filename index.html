@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
@@ -71,17 +71,15 @@
                 <h2 data-aos="fade-left">
                     About
                 </h2>
-                <img src="/images/hero_berlin.jpg" alt="me in berlin">
-                <p data-aos="fade-right">
-                    Ich bin Jakob und ich habe im September 2023 meinen Bachelor im Fach
-                    Wirtschaftsingenieurwesen an der TH-Ingolstadt <b>mit Auszeichnung</b> absolviert.
+                <img data-aos="fade-right" src="/images/hero_berlin.jpg" alt="me in berlin">
+                <p data-aos="fade-left">
+                    Ich bin Jakob und wohne seit meiner Geburt in Ingolstadt. Im September 2023 absolvierte ich meinen
+                    Bachelor im Fach
+                    Wirtschaftsingenieurwesen an der TH-Ingolstadt mit Auszeichnung.
                     <br>
                     <br>
-                    Neben ersten Erfahrungen im Ausland durch einen Schüleraustausch habe ich mir freiwillig im Studium
-                    Grundkenntnisse der französischen Sprache angeeignet.
-                    <br>
-                    <br>
-                    Zu meinen Hobbys zählen das Programmieren sowie das Sport treiben. Meine größte Stärke stellt meine
+                    In meiner Freizeit treibe ich gerne Sport und programmiere Webseiten. Meine größte Stärke stellt
+                    meine
                     überaus hohe
                     Einsatzbereitschaft dar.
 
@@ -95,6 +93,8 @@
                     <div data-aos="fade-right" class="project" data-src="https://leafe.onrender.com/">
                         <img src="images/leafe1.PNG" alt="leafe" />
                         <h3>Leafe</h3>
+                        <p class="alert">This website takes more time to load because the servers spin down on
+                            inactivity.</p>
                         <p>
                             Responsive E-Commerce shop with User registration, MongoDB & STRIPE
                             Payment.
@@ -104,18 +104,16 @@
                         <img src="images/bookhunt1.PNG" alt="bookhunt" />
                         <h3>Bookhunt.io</h3>
                         <p>
-                            Explore with ease: Navigate the Google Books API
-                            seamlessly on Bookhunt.io!
+                            Webservice to search and access the Google Books API.
                         </p>
                     </div>
                     <div data-aos="fade-right" class="project" data-src="#">
                         <img src="images/creativity.jpg" alt="bookhunt" />
-                        <h3>CREATEivity (Coming soon!)</h3>
+                        <h3>Createivity (coming soon)</h3>
 
                         <p>
                             Choose a theme, explore background sounds, and transform
-                            household items—Pirate theme? Turn a kitchen roll into a
-                            clever telescope!
+                            household items.
                         </p>
                     </div>
                 </div>
@@ -132,6 +130,7 @@
                         rows="5"></textarea>
                     <button>Submit</button>
                     <p id="success" class="hide">Message sent successfully</p>
+                    <p id="error" class="hide">Error, pls try again or use the email instead</p>
                 </form>
             </div>
 

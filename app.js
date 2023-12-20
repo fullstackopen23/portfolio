@@ -40,13 +40,21 @@ form.addEventListener('submit', (e) => {
     email: email.value,
     message: message.value,
   })
-  fetch('https://formspree.io/f/xleyaqor', {
+  fetch('https://formspree.io/f/xoqgalnr', {
     method: 'POST',
     body: formData,
     headers: {
       Accept: 'application/json',
     },
-  }).then((res) => {})
+  })
+    .then((res) => {})
+    .catch((error) => {
+      document.getElementById('error').classList.remove('hide')
+      setTimeout(() => {
+        document.getElementById('error').classList.add('hide')
+      }, 10000)
+      return
+    })
 
   name.value = ''
   email.value = ''

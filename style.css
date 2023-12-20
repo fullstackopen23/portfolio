@@ -24,6 +24,10 @@ li {
   color: inherit;
   list-style-type: none;
 }
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2em;
+}
 section {
   background-color: var(--bg);
   position: relative;
@@ -32,7 +36,6 @@ section {
   overflow: hidden;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   padding-top: 80px;
 }
 .main-section {
@@ -58,10 +61,14 @@ section h2::before {
 
 /* MAIN SECTION */
 
+.main-section {
+  padding: 20px;
+}
+
 #blob {
   fill: var(--duo);
   position: absolute;
-  width: 80%;
+  width: 90%;
   max-width: 600px;
 }
 .hero_text_container {
@@ -198,13 +205,14 @@ section.about-section img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 .project {
-  width: 70%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 500px;
+  cursor: pointer;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -216,19 +224,31 @@ section.about-section img {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.project h3 {
+  font-size: 1.3em;
+}
+
+.alert {
+  color: rgb(189, 16, 16);
+}
+
 .project img {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+  height: 100%;
+  max-height: 250px;
+  aspect-ratio: 16/9;
+  object-fit: cover; /*magic*/
+
   border-radius: 10px;
-}
-.project:hover {
-  scale: 1.02;
 }
 
 @media (max-width: 288px) {
   nav {
     padding: 10px;
+  }
+  p {
+    font-size: 0.9em;
   }
 }
 
@@ -254,6 +274,11 @@ section.about-section img {
   }
 }
 /* CONTACT SECTION */
+
+.contact-section {
+  padding: 10px;
+}
+
 .contact-wrapper {
   display: flex;
   flex-direction: column;
@@ -262,6 +287,7 @@ section.about-section img {
   margin-bottom: 80px;
   width: 80%;
 }
+
 form {
   display: flex;
   flex-direction: column;
